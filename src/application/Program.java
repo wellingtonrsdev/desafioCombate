@@ -46,14 +46,14 @@ public class Program {
 
 		System.out.print("Quantos turnos você deseja executar? ");
 		int N = sc.nextInt();
+		System.out.println();
 
 		for (int i = 0; i < N; i++) {
-
-			System.out.println();
-			System.out.println("Resultado do turno " + (1 + i) + ":");
+			
 			c1.takeDamage(c2);
-			System.out.println(c1.Status());
 			c2.takeDamage(c1);
+			System.out.println("Resultado do turno " + (1 + i) + ":");
+			System.out.println(c1.Status());
 			System.out.println(c2.Status());
 			System.out.println();
 
